@@ -158,3 +158,5 @@ h2{font-size:clamp(1.8rem,3.4vw,2.7rem);line-height:1.2;font-weight:800;color:va
 .legal li strong{color:var(--ink)}
 .legal a{color:var(--navy);text-decoration:underline}
 .legal-date{margin-top:40px;font-size:.85rem}
+
+.offices.one{grid-template-columns:1fr}

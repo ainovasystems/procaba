@@ -30,7 +30,7 @@
     if (!form.checkValidity()) { note.textContent = 'Revisa los campos obligatorios.'; form.reportValidity(); return; }
     const d = new FormData(form);
     const body = `Nombre: ${d.get('nombre')}\nTeléfono: ${d.get('tel')}\n\n${d.get('msg')}`;
-    location.href = `mailto:info@procaba.es?subject=${encodeURIComponent('Consulta web · ' + d.get('nombre'))}&body=${encodeURIComponent(body)}`;
+    location.href = `mailto:info@procaba.vercel.app?subject=${encodeURIComponent('Consulta web · ' + d.get('nombre'))}&body=${encodeURIComponent(body)}`;
     note.textContent = 'Abriendo tu cliente de correo…';
   });
 })();
